@@ -7,11 +7,11 @@ Things you may want to cover:
 
 * Ruby version
 
->> ruby "3.1.3"
+> ruby "3.1.3"
 
 * Rails version
 
->> gem "rails", "~> 7.0.4", ">= 7.0.4.2"
+> gem "rails", "~> 7.0.4", ">= 7.0.4.2"
 
 * Services
 

@@ -1,7 +1,7 @@
 # README
 
 The search is based on 4 fields. Three of them are responsible for title, type and authors, and one more for exceptions or negative requests.
-The program supports AJAX.
+The app used AJAX.
 
 Things you may want to cover:
 

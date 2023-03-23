@@ -1,0 +1,25 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="row">
+      <div class="col-md-7">
+        <h3>Search task</h3>
+      </div>
+      <hr>
+    </div>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+        <%= render partial: 'search_form' %>
+        <br>
+      </div>
+      <hr>
+      <div class="col-md-12 vert-offset-top-1">
+        <div id="search-results">
+          <%= render partial: 'results', locals: { results: @results} %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

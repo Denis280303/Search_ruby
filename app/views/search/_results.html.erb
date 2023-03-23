@@ -1,0 +1,24 @@
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Designed by</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% if results.present? %>
+    <% results.each do |result| %>
+      <tr>
+        <td> <%= result["Name"] %></td>
+        <td> <%= result["Type"] %></td>
+        <td> <%= result["Designed by"] %></td>
+      </tr>
+    <% end %>
+  <% else %>
+    <tr>
+      <td>No results to show</td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

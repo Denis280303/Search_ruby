@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Testapp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
+
+    <% if cookies[:visited].blank? %>
+      <%= javascript_include_tag 'welcome_alert' %>
+    <% end %>
+  </head>
+
+  <body>
+  <div class="container">
+    <div class="row vert-offset-top-5 vert-offset-bottom-5">
+      <%= yield %>
+    </div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+<%= form_with url: search_index_path, method: :get, data: { remote: true }, id: 'search-form' do |f| %>
+  <%= f.text_field :name, placeholder: "Name..." %>
+  <%= f.text_field :type, placeholder: "Type..." %>
+  <%= f.text_field :designer, placeholder: "Designed by..." %>
+  <%= f.text_field :exclusions, placeholder: "Exclusions by coma..." %>
+  <%= f.submit "Search", name: nil %>
+<% end %>
